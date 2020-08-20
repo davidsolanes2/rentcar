@@ -10,7 +10,11 @@ Requisitos:
 2.- Una vez que el usuario se lo instala en el directorio de proyecto debera de ejecutar
     "composer install"
 
-3.- Para arrancar el usuario, en el directorio del proyecto debera de ejecutar
+3.- Realizar php artisan migrate para pasar las entidades a la BD,con el proyecto arrancado
+    pero antes (hasta que no lo arregle) en el archivo .env el DB_HOST se tiene que cambiar
+    a 127.0.0.1 y volverlo a dejar tal y como estaba.
+
+4.- Para arrancar el usuario, en el directorio del proyecto debera de ejecutar
     "docker-compose up"
 
-4.- Una vez parado el proyecto, el usuario debera de ejecutar "docker-compose down"
+5.- Una vez parado el proyecto, el usuario debera de ejecutar "docker-compose down"
